@@ -1,11 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-base-200">
+    <section class="max-w-[900px] mx-auto px-4 py-6 space-y-6 ">
+        <!--heading-->
+          <h1 class="text-[#002C5C] font-bold text-[32px]">
+            Job Application Tracker
+          </h1>
+        <section class="pt-6 ">
+            <!--3 card-->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
+              <div class="bg-base-100 border border-base-300 shadow-sm p-3 rounded-sm">
+                <p class="text-neutral ">Total</p>
+                <h2 id="totalCount" class="text-[#002C5C] font-extrabold text-3xl ">8</h2>
+              </div>
+              <div class="bg-base-100 border border-base-300 shadow-sm p-3 rounded-sm">
+                <p class="text-neutral ">Interview</p>
+                <h2 id="interviewCount" class="text-[#10B981] font-extrabold text-3xl ">0</h2>
+              </div>
+              <div class="bg-base-100 border border-base-300 shadow-sm p-3 rounded-sm">
+                <p class="text-neutral ">Rejected</p>
+                <h2 id="rejectedCount" class="text-[#EF4444] font-extrabold text-3xl ">0</h2>
+              </div>
+            </div>
+            <!--divider-> 	A divider line between two elements -->
+            <div class="divider my-5"></div>
+        </section>
+        <section class="p-6 space-y-5 ">
+            <div class="flex justify-between items-center">
+                <h2 class="text-neutral font-bold text-[22px]">Available Jobs</h2>
+                <p class="text-neutral font-semibold" ><span id="jobCount">8</span> Jobs</p>
+            </div>
+            <div class="tabs tabs-boxed bg-base-200 gap-3 w-fit ">
+                <button class="tab tab-active px-6 py-2 text-sm font-semibold bg-[#3B82F6] text-white" data-tab="All">All</button>
+                <button class="tab tab-active  px-6 py-2 text-sm font-semibold" data-tab="Interview">Interview</button>
+                <button class="tab tab-active px-6 py-2 text-sm font-semibold" data-tab="Rejected">Rejected</button>
+            </div>
+        </section>
+    </section>
+  </body>
 </html>

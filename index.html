@@ -36,18 +36,34 @@
             <!--divider-> 	A divider line between two elements -->
             <div class="divider my-5"></div>
         </section>
-        <section class="p-6 space-y-5 ">
-            <div class="flex justify-between items-center">
-                <h2 class="text-neutral font-bold text-[22px]">Available Jobs</h2>
-                <p class="text-neutral font-semibold" ><span id="jobCount">8</span> Jobs</p>
-            </div>
-            <div id="tabs" class="tabs tabs-boxed bg-base-200 gap-3 w-fit ">
-                <button class="tab tab-active px-6 py-2 text-sm font-semibold bg-[#3B82F6] text-white" data-tab="All">All</button>
-                <button class="tab px-6 py-2 text-sm font-semibold" data-tab="Interview">Interview</button>
-                <button class="tab px-6 py-2 text-sm font-semibold" data-tab="Rejected">Rejected</button>
-            </div>
-            <div id="jobArea" class="space-y-3"></div>
-        </section>
+        <section class="pt-6 space-y-5">
+        <div class="flex justify-between items-center">
+          <h2 class="text-neutral font-bold text-[22px]">Available Jobs</h2>
+          <p class="text-neutral font-semibold">
+            <span id="jobCount">8</span> Jobs
+          </p>
+        </div>
+        <div id="tabs" class="bg-base-200 gap-3 w-fit">
+          <button
+            class=" px-6 py-2 text-sm font-semibold bg-[#3B82F6] text-white rounded-sm"
+            data-tab="All"
+          >
+            All
+          </button>
+          <button
+            class="bg-neutral-content bg-soft px-6 py-2 text-sm font-semibold rounded-sm"
+            data-tab="Interview"
+          >
+            Interview
+          </button>
+          <button
+            class=" bg-neutral-content bg-soft px-6 py-2 text-sm font-semibold rounded-sm"
+            data-tab="Rejected"
+          >
+            Rejected
+          </button>
+        </div>
+      </section>
     </section>
   </body>
   <script src="./script/fuction.js"></script>
